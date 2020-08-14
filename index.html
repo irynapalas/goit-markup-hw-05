@@ -63,7 +63,7 @@
 					<br />
 					для вашого бізнесу
 				</h1>
-				<button class="btn" type="button">Замовити послугу</button>
+				<button class="btn" type="button" data-modal-open>Замовити послугу</button>
 			</section>
 
 			<!--Section Main work principles-->
@@ -567,5 +567,11 @@
 				</div> -->
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="btn-close" data-modal-close>X</button>
+			</div>
+		</div>
 	</body>
+	<script src="./js/modal.js"></script>
 </html>
