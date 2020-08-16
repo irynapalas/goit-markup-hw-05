@@ -269,7 +269,14 @@ body {
 	color: var(--title-text-color);
 	text-align: center;
 }
+.whatwedo-card {
+	position: relative;
+}
 .overlay-title {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
 	padding-top: 27px;
 	padding-bottom: 27px;
 	background: rgba(47, 48, 58, 0.8);
