@@ -562,16 +562,34 @@ body {
 	color: var(--secondary-text-color);
 }
 .content-portfolio-list-item-pop-up-text {
-	margin-right: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: translateY(100%);
+
+	/* margin-right: 24px;
 	margin-left: 24px;
+	margin-bottom: 20px; */
+
 	margin-top: 0;
-	margin-bottom: 20px;
+	padding: 63px 24px;
 
 	font-size: 18px;
 	line-height: 1.556;
 	letter-spacing: 0.03em;
 	color: var(--title-text-color);
-	background-color: var(--temporary-background-color);
+	background-color: rgba(33, 150, 243, 0.9);
+}
+.box-img {
+	position: relative;
+}
+.content-portfolio-list-item:hover .content-portfolio-list-item-pop-up-text {
+	opacity: 1;
+	transform: translateY(0%);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Modal window */
